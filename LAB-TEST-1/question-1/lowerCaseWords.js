@@ -13,6 +13,7 @@ function lowerCaseWords(arr) {
       .filter(item => typeof item === 'string') //turning the strings in the array to lower case
       .map(item => item.toLowerCase());
 
+      // if no lowercase strings are found, reject the promise with an error message
     if (lowerCaseArray.length > 0) {
       resolve(lowerCaseArray);
     } else {
